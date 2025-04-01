@@ -535,6 +535,19 @@
 <footer style="background-color: #333; color: white; text-align: center; padding: 15px;">
     <p>&copy; 2025 HTML Basics Guide. All rights reserved.</p>
 </footer>
+<section>
+    <h2>24. Password Toggle</h2>
+    <label for="password">Enter password:</label>
+    <input type="password" id="password">
+    <button onclick="togglePassword()">Show/Hide</button>
+
+    <script>
+        function togglePassword() {
+            let passField = document.getElementById("password");
+            passField.type = passField.type === "password" ? "text" : "password";
+        }
+    </script>
+</section>
 
 
 
