@@ -225,6 +225,34 @@
     </style>
 </section>
 
+<section>
+    <h2>13. Dark Mode Toggle</h2>
+    <p>Click the button below to switch between light and dark mode.</p>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+    <style>
+        .dark-mode {
+            background-color: #222;
+            color: white;
+        }
+        .dark-mode header {
+            background-color: #111;
+        }
+        .dark-mode button {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</section>
+
+
+
 
     </body>
 </html>
