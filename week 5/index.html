@@ -419,7 +419,20 @@
 
     <button onclick="prevSlide()">&#10094; Prev</button>
     <button onclick="nextSlide()">Next &#10095;</button>
-
+    <style>
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+        }
+        .slide:first-child {
+            display: block;
+        }
+    </style>
 
 
 
