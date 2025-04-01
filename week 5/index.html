@@ -331,6 +331,25 @@
         .accordion:hover {
             background-color: #ddd;
         }
+        .panel {
+            display: none;
+            padding: 10px;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+
+    <script>
+        let acc = document.querySelectorAll(".accordion");
+        acc.forEach(button => {
+            button.addEventListener("click", function () {
+                this.nextElementSibling.style.display = this.nextElementSibling.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+</section>
+
+
 
 
     </body>
