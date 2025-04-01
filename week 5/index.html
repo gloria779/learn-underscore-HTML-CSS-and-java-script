@@ -549,6 +549,24 @@
     </script>
 </section>
 
+<section>
+    <h2>25. Color Picker</h2>
+    <label for="color">Pick a color:</label>
+    <input type="color" id="color" name="color">
+</section>
+
+<section>
+    <h2>26. Character Counter</h2>
+    <label for="text-area">Type something:</label>
+    <textarea id="text-area" rows="4"></textarea>
+    <p>Character count: <span id="char-count">0</span></p>
+
+    <script>
+        document.getElementById("text-area").addEventListener("input", function () {
+            document.getElementById("char-count").innerText = this.value.length;
+        });
+    </script>
+</section>
 
 
 
