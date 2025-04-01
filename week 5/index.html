@@ -488,6 +488,19 @@
     </script>
 </section>
 
+<section>
+    <h2>23. Dynamic Clock</h2>
+    <p>Current Time:</p>
+    <h3 id="clock"></h3>
+
+    <script>
+        function updateClock() {
+            document.getElementById("clock").innerHTML = new Date().toLocaleTimeString();
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</section>
 
 
 
