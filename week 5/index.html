@@ -501,6 +501,40 @@
         updateClock();
     </script>
 </section>
+<button id="backToTop" onclick="scrollToTop()">⬆ Back to Top</button>
+
+<style>
+    #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        display: none;
+        border-radius: 5px;
+    }
+
+    #backToTop:hover {
+        background-color: #555;
+    }
+</style>
+
+<script>
+    window.onscroll = function () {
+        document.getElementById("backToTop").style.display = window.scrollY > 100 ? "block" : "none";
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+</script>
+
+<footer style="background-color: #333; color: white; text-align: center; padding: 15px;">
+    <p>&copy; 2025 HTML Basics Guide. All rights reserved.</p>
+</footer>
 
 
 
